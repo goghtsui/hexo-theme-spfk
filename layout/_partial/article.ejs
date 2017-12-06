@@ -31,6 +31,7 @@
           <% if (is_page()){ %>
               <%- partial('_partial/page') %>
           <% } %>
+		<%- partial('post/wordcount') %>
         <%- post.content %>
       <% } %>
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.toc)) && !index){ %>

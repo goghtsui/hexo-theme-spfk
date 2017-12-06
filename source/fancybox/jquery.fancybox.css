@@ -246,6 +246,15 @@
 	padding-top: 10px;
 }
 
+.img-box-ul li {
+	float: left;
+	list-style-type:none;
+	margin: 18px;
+	padding: 5px;
+	height: auto;
+	width: 300px;
+}
+
 .fancybox-title-over-wrap {
 	position: absolute;
 	bottom: 0;

@@ -1,13 +1,14 @@
 <div id="gitments"></div>
-<script src="<%- config.root %>js/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
       id: window.location.pathname,
-      owner: '<%= owner%>',
-      repo: '<%= repo%>',
+      owner: 'goghtsui',
+      repo: 'goghtsui.github.io',
       oauth: {
-        client_id: '<%= client_id%>',
-        client_secret: '<%= client_secret%>',
+        client_id: 'a51bca6014170b8afa62',
+        client_secret: 'e744aa2116c71116314abd21b3ff08e4c98f8ded',
       },
     })
     gitment.render('gitments')

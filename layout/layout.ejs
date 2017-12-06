@@ -1,5 +1,10 @@
 <%- partial('_partial/head') %>
 <body>
+  <!-- 页面背景 -->
+  <% if (theme.canvas_nest) { %>
+    <script type="text/javascript" color="232,232,232" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  <% } %>
+
   <div id="container">
     <div class="left-col">
     <%- partial('_partial/left-col', null, {cache: !config.relative_link}) %>
@@ -11,5 +16,8 @@
     </div>
     <%- partial('_partial/after-footer') %>
   </div>
+  <%- live2d() %>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/love.js"></script>
 </body>
 </html>

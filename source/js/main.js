@@ -69,6 +69,7 @@ require([], function (){
         });
 
     }
+	
     //是否开启动画
     if(yiliaConfig.animate === true){
 
@@ -141,4 +142,16 @@ require([], function (){
         $(".article a[href]").attr("target", "_blank")
     }
     $(".archive-article-title").attr("target", "_blank");
+	
+	// 相册
+    if($('.instagram').length) {
+        var bp = document.createElement("script");
+	    bp.src = "/js/photo.js";
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s),
+	    require(['/js/photo.js', '/fancybox/jquery.fancybox.js', '/js/jquery.lazyload.js'], function(obj) {
+            obj.init();
+        });
+    }
+
 });

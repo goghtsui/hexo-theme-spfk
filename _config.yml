@@ -4,16 +4,15 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  博客首页: /Home
-  作品展示: /works
-  留言打卡: /about
-  前端导航: /FrontEndGuide
-# 静心阅读: /tags
-# 光影之路: /instagram
-# 随笔: /tags/随笔
+  博客首页: /
+  标签一览: /tags
+  我的相册: /photo
+  休闲时光: /enjoy
+
+  # 经验交流: /about
 
 # Link to your avatar | 填写头像地址
-avatar: img/head.jpg
+avatar: img/head.png
 
 # Small icon of Your site | 站点小图标地址
 favicon: img/favicon.png
@@ -24,15 +23,15 @@ favicon: img/favicon.png
 ## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
 ## https://github.com/hexojs/hexo-generator-feed
 subnav:
-  mail: "http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E"
-  github: "https://github.com/luuman"
+  mail: "mailto:xiaofeng355@sina.com"
+  github: "https://github.com/goghtsui"
   zhihu: "#"
-  weibo: "#"
-  google: "#"
-  twitter: "#"
-  linkedin: "#"
+  weibo: "https://weibo.com/xiaofeng117"
+  google: "https://plus.google.com/111664499118438311534"
+  # twitter: "#"
+  # linkedin: "#"
   # facebook: "#"
-  # rss: /atom.xml
+  rss: /atom.xml
   # pinterest: "#"
   # QQ: "#"
   # wechat: "#"
@@ -48,24 +47,24 @@ subnav:
 
 disqus: 
   # on: true
-  shortname: luuman
+  shortname: xiaofeng355
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
   # It is unnecessary to enable disqus here if 
   # you have set "disqus_shortname" in your site's "_config.yml" 
 
 duoshuo: 
   # on: true
-  domain: luuman
+  domain: xiaofeng355
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 gitment:
   on: true
-  owner: luuman
-  repo: luuman.github.io
-  client_id: 
-  client_secret: 
+  owner: goghtsui
+  repo: goghtsui.github.io
+  client_id: a51bca6014170b8afa62
+  client_secret: e744aa2116c71116314abd21b3ff08e4c98f8ded
 
 youyan:
   #on: true
@@ -76,6 +75,17 @@ youyan:
 
 
 # >>> Style Customisation 样式自定义 <<<
+
+# --------------------------------------------------------------
+# background image
+# --------------------------------------------------------------
+# color ：线条颜色, 默认: '0,0,0'；三个数字分别为(R,G,B)
+# opacity: 线条透明度（0~1）, 默认: 0.5
+# count: 线条的总数量, 默认: 150
+# zIndex: 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1
+# add canvas-nest effect
+# see detail from https://github.com/hustcc/canvas-nest.js
+canvas_nest: true
 
 # Background | 背景
 ## "background_sum": show images form /source/background/的图片数目
@@ -108,18 +118,36 @@ left_col_width: 300
 # Keep TOC title on the same line | 
 toc_nowrap: false
 
+# Post wordcount display settings
+# Dependencies: https://github.com/willin/hexo-wordcount
+post_wordcount:
+  item_text: true
+  wordcount: true
+  min2read: true
+
 # 自定义"阅读全文"链接按钮的显示文字
 # Customize the text on excerpt link
-excerpt_link: 大航海 #修改more>>的文字
+# 修改more>>的文字
+excerpt_link: 阅读全文
 
 # 是否显示边栏中的搜索框（仅样式，未添加搜索功能）
 # Search Box in left column
-# search_box: true
+search_box: true
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
 animate: true
 
+# 是否开启相册功能
+photos: true
+
+# 是否开启壁纸功能
+wallpaper: true
+
+# 是否开启悬浮宠物
+live2d:
+  model: wanko
+  bottom: -30
 
 # >>> Small features | 小功能设置 <<<
 
@@ -128,9 +156,9 @@ animate: true
 tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
-# friends: false
-friends:
-  name: http://luuman.github.io/
+friends: false
+# friends:
+# name: xiaofeng.site
 
 # 打赏
 # 请在需要打赏的文章的md文件头部，设置属性reward: true
@@ -138,7 +166,7 @@ friends:
 # 打赏基础设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording1: '纯属好玩'
+reward_wording1: '大吉大利，晚上吃鸡'
 reward_wording2: '扫码打赏，你说多少就多少'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/img/alipay.jpg
 alipay: /img/alipay.png
@@ -146,7 +174,7 @@ alipay: /img/alipay.png
 weixin: /img/weixin.png
 
 #是否开启“关于我”。
-aboutme: 纯海迷、爱运动、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱游离于错综复杂的编码与逻辑中
+aboutme: 热爱编程，对各类技术敏感，以不断自我提升为目标；希望能结交各路豪杰，交流经验共同提高，手游上王者、吃鸡欢迎组队！
 #aboutme: false
 
 # 是否在新窗口打开链接
@@ -165,7 +193,7 @@ fancybox: true
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
-mathjax: false
+mathjax: true
 
 # Socail Share | 是否开启分享
 # share: true
@@ -174,22 +202,31 @@ baidushare: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-google_site: # pFW527fHrjfI0si2w4NQ0w3cTw12AvvuohAu1PUfqKA
-baidu_site: #c167b9feb4f0b208b712c79629c188e4
+google_site: 
+baidu_site: hg1tugxzZf
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X, or Baidu Analytics hash key
-google_analytics:
-baidu_analytics:
+google_analytics: UA-70168817-1
+baidu_analytics: a76cfedb91334def30cb7ff4264b0c18
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
-  site_visit: 海贼到访数
+  site_visit: 本站访客量
   page_visit: 本页阅读量
+  page_total_count: 总字数统计
 
 # A标签提示
 TipTitle: true
 
 # Loading
-# Loading: true
+Loading: true
+
+# hexo sitemap网站地图
+sitemap: sitemap.xml
+baidusitemap: baidusitemap.xml
+
+# 百度统计 http://sitecenter.baidu.com/sc-web/
+# 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容
+baidu_tongji: a76cfedb91334def30cb7ff4264b0c18
