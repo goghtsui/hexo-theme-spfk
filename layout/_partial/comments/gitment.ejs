@@ -3,12 +3,12 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
-      id: window.location.pathname,
-      owner: 'goghtsui',
-      repo: 'goghtsui.github.io',
+      id: "<%=page.date%>",
+      owner: '<%=theme.gitment.owner%>',
+      repo: '<%=theme.gitment.repo%>',
       oauth: {
-        client_id: 'a51bca6014170b8afa62',
-        client_secret: 'e744aa2116c71116314abd21b3ff08e4c98f8ded',
+        client_id: '<%=theme.gitment.client_id%>',
+        client_secret: '<%=theme.gitment.client_secret%>',
       },
     })
     gitment.render('gitments')

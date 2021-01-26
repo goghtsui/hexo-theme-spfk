@@ -27,7 +27,7 @@ subnav:
   github: "https://github.com/goghtsui"
   zhihu: "#"
   weibo: "https://weibo.com/xiaofeng117"
-  google: "https://plus.google.com/111664499118438311534"
+  # google: "https://plus.google.com/111664499118438311534"
   # twitter: "#"
   # linkedin: "#"
   # facebook: "#"
@@ -45,14 +45,14 @@ subnav:
 # Chose ONE as your comment system and keep others disable.
 # 选一个作为网站评论系统，其他保持禁用。
 
-disqus: 
+disqus:
   # on: true
   shortname: xiaofeng355
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
-  # It is unnecessary to enable disqus here if 
-  # you have set "disqus_shortname" in your site's "_config.yml" 
+  # It is unnecessary to enable disqus here if
+  # you have set "disqus_shortname" in your site's "_config.yml"
 
-duoshuo: 
+duoshuo:
   # on: true
   domain: xiaofeng355
   # 是否开启多说评论，http://duoshuo.com/create-site/
@@ -63,12 +63,12 @@ gitment:
   on: true
   owner: goghtsui
   repo: goghtsui.github.io
-  client_id: a51bca6014170b8afa62
-  client_secret: e744aa2116c71116314abd21b3ff08e4c98f8ded
+  client_id: c24ae8995e63819cc6ac
+  client_secret: 6b8333126a89a30fcc9aea67ba107118f73c20da
 
 youyan:
   #on: true
-  id: 
+  id:
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
@@ -104,7 +104,7 @@ highlight_style:
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式 Value: 0 - 9 可选
-  # 通过 code_block 切换内置代码高亮配色主题  Value: 0 - 4 
+  # 通过 code_block 切换内置代码高亮配色主题  Value: 0 - 4
 
 blockquote_style:
   #on: true
@@ -115,7 +115,7 @@ blockquote_style:
 left_col_width: 300
 
 # 目录中标题不换行
-# Keep TOC title on the same line | 
+# Keep TOC title on the same line |
 toc_nowrap: false
 
 # Post wordcount display settings
@@ -202,7 +202,7 @@ baidushare: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-google_site: 
+google_site:
 baidu_site: hg1tugxzZf
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X, or Baidu Analytics hash key
